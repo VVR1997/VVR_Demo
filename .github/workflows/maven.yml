@@ -17,14 +17,14 @@ on:
 jobs:
   build:
 
-    runs-on: MacOS-latest
+    runs-on: macOS-Catalina
 
     steps:
     - uses: actions/checkout@v3
-    - name: Set up JDK 17
+    - name: Set up JDK 20
       uses: actions/setup-java@v3
       with:
-        java-version: '17'
+        java-version: '20'
         distribution: 'temurin'
         cache: maven
     - name: Build with Maven
